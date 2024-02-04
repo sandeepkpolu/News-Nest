@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi_graph"
+    app:startDestination="@id/topNewsFragment">
+
+    <fragment android:id="@+id/topNewsFragment"
+        android:name="com.beweaver.newsnest.ui.fragments.TopNewsFragment"
+        android:label="topNewsFragment"
+        tools:layout="@layout/fragment_top_news">
+        <action android:id="@+id/toArticleFragment"
+            app:destination="@id/articleFragment">
+        </action>
+    </fragment>
+
+    <fragment android:id="@+id/worldNewsFragment"
+        android:name="com.beweaver.newsnest.ui.fragments.WorldNewsFragment"
+        android:label="worldNewsFragment"
+        tools:layout="@layout/fragment_world_news">
+        <action android:id="@+id/toArticleFragment"
+            app:destination="@id/articleFragment">
+        </action>
+    </fragment>
+
+    <fragment android:id="@+id/bookmarksFragment"
+        android:name="com.beweaver.newsnest.ui.fragments.BookmarksFragment"
+        android:label="bookmarksFragment"
+        tools:layout="@layout/fragment_bookmarks">
+        <action android:id="@+id/toArticleFragment"
+            app:destination="@id/articleFragment">
+        </action>
+    </fragment>
+
+    <fragment android:id="@+id/moreNewsFragment"
+        android:name="com.beweaver.newsnest.ui.fragments.MoreNewsFragment"
+        android:label="moreNewsFragment"
+        tools:layout="@layout/fragment_more_news">
+        <action android:id="@+id/toSelectedNewsFragment"
+            app:destination="@id/selectedNewsFragment">
+        </action>
+    </fragment>
+
+    <fragment android:id="@+id/articleFragment"
+        android:name="com.beweaver.newsnest.ui.fragments.ArticleFragment"
+        android:label="articleFragment"
+        tools:layout="@layout/fragment_article">
+        <argument
+            android:name="newsItemURL"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+
+    <fragment android:id="@+id/selectedNewsFragment"
+        android:name="com.beweaver.newsnest.ui.fragments.SelectedNewsFragment"
+        android:label="selectedNewsFragment"
+        tools:layout="@layout/fragment_selected_news">
+        <argument
+            android:name="selectedNews"
+            app:argType="string"
+            android:defaultValue="" />
+
+        <action android:id="@+id/toArticleFragment"
+            app:destination="@id/articleFragment">
+        </action>
+    </fragment>
+
+</navigation>

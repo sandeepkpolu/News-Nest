@@ -1,0 +1,30 @@
+[
+  {
+    "name": "US",
+    "url": "https://timesofindia.indiatimes.com/rssfeeds_us/72258322.cms"
+  },
+  {
+    "name": "India",
+    "url": "https://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms"
+  },
+  {
+    "name": "Business",
+    "url": "https://timesofindia.indiatimes.com/rssfeeds/1898055.cms"
+  },
+  {
+    "name": "Sports",
+    "url": "https://timesofindia.indiatimes.com/rssfeeds/4719148.cms"
+  },
+  {
+    "name": "Tech",
+    "url": "https://timesofindia.indiatimes.com/rssfeeds/66949542.cms"
+  },
+  {
+    "name": "Education",
+    "url": "https://timesofindia.indiatimes.com/rssfeeds/913168846.cms"
+  },
+  {
+    "name": "Entertainment",
+    "url": "https://timesofindia.indiatimes.com/rssfeeds/1081479906.cms"
+  }
+]

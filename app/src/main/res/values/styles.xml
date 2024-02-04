@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomNavigationViewInactive" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="fontFamily">@font/roboto_semi_bold</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+    </style>
+
+    <style name="BottomNavigationViewActive" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="fontFamily">@font/roboto_semi_bold</item>
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+    </style>
+
+    <style name="BottomNavigationViewStyle">
+        <item name="android:background">@color/color_primary</item>
+        <item name="itemIconTint">@color/white</item>
+        <item name="itemIconSize">@dimen/bottom_nav_icon_size</item>
+        <item name="itemTextAppearanceActive">@style/BottomNavigationViewActive</item>
+        <item name="itemTextAppearanceInactive">@style/BottomNavigationViewInactive</item>
+        <item name="itemTextColor">@color/white</item>
+    </style>
+
+    <style name="roundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+</resources>
